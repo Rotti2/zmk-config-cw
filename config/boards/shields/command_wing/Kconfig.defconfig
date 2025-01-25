@@ -1,0 +1,6 @@
+if SHIELD_COMMAND_WING
+
+config ZMK_KEYBOARD_NAME
+    default "Command Wing"
+
+endif
