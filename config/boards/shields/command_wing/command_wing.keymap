@@ -1,247 +1,248 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "keys_de.h"
 
 / {
     macros {
         mac_highlt: mac_highlt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_1>, <&macro_tap &kp H>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_1>; 
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N1>, <&macro_tap &kp DE_H>, <&macro_release &kp LSHFT &kp LALT &kp DE_N1>; 
         };
         mac_solo: mac_solo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_1>, <&macro_tap &kp S>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_1>; 
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N1>, <&macro_tap &kp DE_S>, <&macro_release &kp LSHFT &kp LALT &kp DE_N1>; 
         };
         mac_freeze: mac_freeze {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_1>, <&macro_tap &kp F>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_1>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N1>, <&macro_tap &kp DE_F>, <&macro_release &kp LSHFT &kp LALT &kp DE_N1>;
         };
         mac_prvw: mac_prvw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_1>, <&macro_tap &kp P>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_1>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N1>, <&macro_tap &kp DE_P>, <&macro_release &kp LSHFT &kp LALT &kp DE_N1>;
         };
         mac_blind: mac_blind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_1>, <&macro_tap &kp B>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_1>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N1>, <&macro_tap &kp DE_B>, <&macro_release &kp LSHFT &kp LALT &kp DE_N1>;
         };
 
         mac_previous: mac_previous {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp P>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_P>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_set: mac_set {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp S>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_S>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_selfix: mac_selfix {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp F>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_F>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_learn: mac_learn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp L>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_L>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_pause: mac_pause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp A>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_A>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_next: mac_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp N>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_N>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_up: mac_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp U>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_U>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_down: mac_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp D>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_D>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_left: mac_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp J>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_J>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_go_minus: mac_go_minus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp MINUS>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>; 
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_MINUS>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>; 
         };
         mac_xkeys: mac_xkeys {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp X>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_X>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_page_plus: mac_page_plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp Q>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_Q>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_page_minus: mac_page_minus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp W>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_W>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_right: mac_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp K>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_K>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>;
         };
         mac_go_plus: mac_go_plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_2>, <&macro_tap &kp PLUS>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_2>; 
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N2>, <&macro_tap &kp DE_PLUS>, <&macro_release &kp LSHFT &kp LALT &kp DE_N2>; 
         };
 
         mac_on: mac_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp O>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_O>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_move: mac_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp M>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_M>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_delete: mac_delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp D>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_D>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_stomp: mac_stomp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp T>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_T>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_select: mac_select {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp S>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_S>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_off: mac_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp P>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_P>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_copy: mac_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp C>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_C>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_align: mac_align {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp A>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_A>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_help: mac_help {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp H>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_H>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
         mac_goto: mac_goto {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_3>, <&macro_tap &kp G>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_3>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N3>, <&macro_tap &kp DE_G>, <&macro_release &kp LSHFT &kp LALT &kp DE_N3>;
         };
 
         mac_fixture: mac_fixture {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp F>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_F>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_preset: mac_preset {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp P>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_P>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_edit: mac_edit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp E>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_E>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_update: mac_update {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp U>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_U>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_channel: mac_channel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp C>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_C>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_sequence: mac_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp Q>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_Q>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_assign: mac_assign {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp A>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_A>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_group: mac_group {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp G>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_G>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_cue: mac_cue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp C>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_C>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_time: mac_time {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp T>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_T>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
         mac_store: mac_store {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_4>, <&macro_tap &kp S>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_4>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N4>, <&macro_tap &kp DE_S>, <&macro_release &kp LSHFT &kp LALT &kp DE_N4>;
         };
 
         mac_if: mac_if {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_5>, <&macro_tap &kp I>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_5>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N5>, <&macro_tap &kp DE_I>, <&macro_release &kp LSHFT &kp LALT &kp DE_N5>;
         };
         mac_thru: mac_thru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_5>, <&macro_tap &kp T>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_5>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N5>, <&macro_tap &kp DE_T>, <&macro_release &kp LSHFT &kp LALT &kp DE_N5>;
         };
         mac_at: mac_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_5>, <&macro_tap &kp A>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_5>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N5>, <&macro_tap &kp DE_A>, <&macro_release &kp LSHFT &kp LALT &kp DE_N5>;
         };
         mac_please: mac_please {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_5>, <&macro_tap &kp P>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_5>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N5>, <&macro_tap &kp DE_P>, <&macro_release &kp LSHFT &kp LALT &kp DE_N5>;
         };
 
         mac_oops: mac_oops {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_6>, <&macro_tap &kp O>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_6>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N6>, <&macro_tap &kp DE_O>, <&macro_release &kp LSHFT &kp LALT &kp DE_N6>;
         };
         mac_clear: mac_clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LSHIFT &kp LALT &kp NUMBER_6>, <&macro_tap &kp C>, <&macro_release &kp LSHFT &kp LALT &kp NUMBER_6>;
+            bindings = <&macro_press &kp LSHIFT &kp LALT &kp DE_N6>, <&macro_tap &kp DE_C>, <&macro_release &kp LSHFT &kp LALT &kp DE_N6>;
         };
     };
 
@@ -252,11 +253,11 @@
             display-name = "Base";
 
             bindings = <
-                &mac_highlt   &mac_previous &mac_next     &mac_xkeys        &mac_on     &mac_off      &mac_fixture &mac_channel  &mac_group   &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp PLUS     &mac_oops
-                &mac_solo     &mac_set      &mac_up       &mac_page_plus    &mac_move   &mac_copy     &mac_preset  &mac_sequence &mac_cue     &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &mac_thru
-                &mac_freeze   &mac_selfix   &mac_down     &mac_page_minus   &mac_delete &mac_assign                                           &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp MINUS
-                &mac_prvw     &mac_learn    &mac_left     &mac_right        &mac_stomp  &mac_help     &mac_edit    &mac_assign   &mac_time    &kp NUMBER_0 &kp DOT      &mac_if      &mac_at      &kp ESC
-                &mac_blind    &mac_pause    &mac_go_minus &mac_go_plus      &mac_select &mac_goto     &mac_update  &mac_store                 &bootloader  &kp SLASH    &mac_please               &mac_clear
+                &mac_highlt   &mac_previous &mac_next     &mac_xkeys        &mac_on     &mac_off      &mac_fixture &mac_channel  &mac_group   &kp DE_N7 &kp DE_N8 &kp DE_N9 &kp DE_PLUS     &mac_oops
+                &mac_solo     &mac_set      &mac_up       &mac_page_plus    &mac_move   &mac_copy     &mac_preset  &mac_sequence &mac_cue     &kp DE_N4 &kp DE_N5 &kp DE_N6 &mac_thru
+                &mac_freeze   &mac_selfix   &mac_down     &mac_page_minus   &mac_delete &mac_assign                                           &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_MINUS
+                &mac_prvw     &mac_learn    &mac_left     &mac_right        &mac_stomp  &mac_help     &mac_edit    &mac_assign   &mac_time    &kp DE_N0 &kp DE_DOT      &mac_if      &mac_at      &kp ESC
+                &mac_blind    &mac_pause    &mac_go_minus &mac_go_plus      &mac_select &mac_goto     &mac_update  &mac_store                 &bootloader  &kp DE_SLASH    &mac_please               &mac_clear
             >;
         };
     };
