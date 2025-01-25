@@ -1,2 +1,2 @@
 config SHIELD_COMMAND_WING
-    def_bool $(shields_list_containes, command_wing)
+    def_bool $(shields_list_contains, command_wing)
