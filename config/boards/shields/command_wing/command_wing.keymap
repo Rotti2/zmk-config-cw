@@ -258,6 +258,6 @@
                 &mac_prvw     &mac_learn    &mac_left     &mac_right        &mac_stomp  &mac_help     &mac_edit    &mac_assign   &mac_time    &kp NUMBER_0 &kp DOT      &mac_if      &mac_at      &kp ESC
                 &mac_blind    &mac_pause    &mac_go_minus &mac_go_plus      &mac_select &mac_goto     &mac_update  &mac_store                 &bootloader  &kp SLASH    &mac_please               &mac_clear
             >;
-        }
-    }
+        };
+    };
 };
