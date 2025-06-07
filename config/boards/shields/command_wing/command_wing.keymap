@@ -257,7 +257,7 @@
                 &mac_solo     &mac_set      &mac_up       &mac_page_plus    &mac_move   &mac_copy     &mac_preset  &mac_sequence &none         &mac_cue     &kp DE_N4    &kp DE_N5    &kp DE_N6 &mac_thru    &none
                 &mac_freeze   &mac_selfix   &mac_down     &mac_page_minus   &mac_delete &mac_align    &none        &none         &none         &none        &kp DE_N1    &kp DE_N2    &kp DE_N3 &kp DE_MINUS &none
                 &mac_prvw     &mac_learn    &mac_left     &mac_right        &mac_stomp  &mac_help     &mac_edit    &mac_assign   &none         &mac_time    &kp DE_N0    &kp DE_DOT   &mac_if   &mac_at      &kp ESC
-                &mac_blind    &mac_pause    &mac_go_minus &mac_go_plus      &mac_select &mac_goto     &mac_update  &none         &mac_store    &none        &bootloader  &kp DE_SLASH &none     &mac_please  &mac_clear
+                &mac_blind    &mac_pause    &mac_go_minus &mac_go_plus      &mac_select &mac_goto     &mac_update  &none         &mac_store    &none        &kp LEFT_SHIFT  &kp DE_SLASH &none     &mac_please  &mac_clear
             >;
         };
     };
